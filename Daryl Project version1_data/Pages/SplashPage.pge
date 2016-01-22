@@ -1,0 +1,7 @@
+<SMF>
+	<UI>
+		<SplashPage id="00000000-0000-0000-0000-000000000002" name="SplashPage" backgroundImage="defaultsplash" fillColor="#43c2cc" imageFillType="SMF.UI.ImageFillType.stretch" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" statusBar.visible="false" shiftObjectsDown="false" statusBarTransparent="true" statusBar.style="SMF.UI.StatusBarStyle.default" showNavigationBar="false" showActionBar="false" touchEnabled="true" templatePageID="00000000-0000-0000-0000-100000000001">
+			<EVENTS onShow="SplashPage_Self_OnShow(e);" />
+		</SplashPage>
+	</UI>
+</SMF>

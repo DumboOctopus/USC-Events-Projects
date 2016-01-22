@@ -1,0 +1,83 @@
+<PG ID="C7388CCE-7E7A-4DB2-A6AC-AB4201920AF7" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="Page1" BgClr="ff99cc" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" StatusBarTransparent="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" ShiftObjectsDown="0" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="640" H="960" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<CONTAINER ID="053B1629-009C-40B0-BA9D-00D33F3FE3C1" Nm="Explore_Pane" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="0%" Y="152%" W="1000%" H="850%" Z="0" Anc="3" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<MAPVIEW ID="E577FFEA-10F3-4EFE-9E91-3089745C4EE1" Nm="MapView1" Vsb="1" MapType="0" CenterLatitude="41.035972" CenterLongitude="29.046902" ZoomLevel="2" EnableZoom="1" EnableScroll="1" ShowUserLocation="1" ShowPins="1" TouchEnabled="1">
+					<LCT X="0%" Y="0%" W="1000%" H="700%" Z="0" Anc="3" />
+					<DATA>
+						<PRM Nm="Bind1" Val="" />
+						<PRM Nm="Bind2" Val="" />
+						<PRM Nm="Bind3" Val="" />
+						<PRM Nm="Bind4" Val="" />
+						<PRM Nm="Bind5" Val="" />
+						<PRM Nm="Bind6" Val="" />
+					</DATA>
+				</MAPVIEW>
+			</ITEMS>
+		</CONTAINER>
+		<BTN ID="42607F86-1E92-4C53-973E-715615B863F3" Nm="EventsButton" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+			<LCT X="0%" Y="67%" W="320%" H="83%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
+			<STYLE BgClr="ffcc99" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Events&quot;" />
+			</DATA>
+			<ONPRESSED script="Page1_EventsButton_OnPressed(e);" />
+		</BTN>
+		<BTN ID="CA150122-75C7-4711-A576-8CB6AE13EFEB" Nm="SpotsButton" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+			<LCT X="325%" Y="67%" W="345%" H="83%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
+			<STYLE BgClr="beffbe" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Spots&quot;" />
+			</DATA>
+			<ONPRESSED script="Page1_SpotsButton_OnPressed(e);" />
+		</BTN>
+		<BTN ID="40425061-4689-4D01-A53F-DEAB83420283" Nm="ExploreButton" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+			<LCT X="670%" Y="67%" W="330%" H="83%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
+			<STYLE BgClr="99ccff" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Explore&quot;" />
+			</DATA>
+			<ONPRESSED script="Page1_ExploreButton_OnPressed(e);" />
+		</BTN>
+		<CONTAINER ID="F291942A-C14B-4918-95FD-809A19F5D006" Nm="Spots_Pane" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="0%" Y="152%" W="1000%" H="850%" Z="0" Anc="3" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
+		</CONTAINER>
+		<CONTAINER ID="36F6CBA3-05BA-4381-ACF0-360DDBFACF7D" Nm="Events_Pane" Vsb="1" TouchEnabled="1" AutoSize="0">
+			<LCT X="0%" Y="152%" W="1000%" H="850%" Z="0" Anc="3" />
+			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
+			<ITEMS>
+				<REPEATBOX ID="FFF9AD3F-224C-495F-9DA8-51EC7A961824" Nm="RepeatBox1" Vsb="1" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="1" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="0" ShowHeader="0" ScrollHeader="0" StrokeWidth="3" StrokeColor="ffcc99" AutoSize="0" Loop="0" UseActiveItem="0">
+					<LCT X="-45" Y="41%" W="1000%" H="1000%" Z="0" Anc="3" />
+					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
+					<DATASOURCE>
+						<PRM Nm="Bind" Val="" />
+					</DATASOURCE>
+					<GROUPINGDATASOURCE>
+						<PRM Nm="Bind" Val="" />
+					</GROUPINGDATASOURCE>
+					<ITM InActItemH="4000d" ActItemH="4000d" HeaderItemH="4000d" GroupingHeaderItemH="4000d" PullDownItemH="4000d" PullUpItemH="4000d">
+						<STYLE BgTparent="0" InActBgClr="ffe6c8" InActBgPicName="" InActPicPosition="3" InActPicSizeMode="2" ActBgClr="eff3ef" ActBgPicName="" ActPicPosition="3" ActPicSizeMode="2" HeaderBgClr="eff3ef" HeaderBgPicName="" HeaderPicPosition="3" HeaderPicSizeMode="2" GroupingHeaderBgClr="e0dcd6" GroupingHeaderBgPicName="" GroupingHeaderPicPosition="3" GroupingHeaderPicSizeMode="2" PullDownBgClr="5a6265" PullDownBgPicName="" PullDownPicPosition="3" PullDownPicSizeMode="2" PullUpBgClr="5a6265" PullUpBgPicName="" PullUpPicPosition="3" PullUpPicSizeMode="2" />
+						<BODY>
+						</BODY>
+					</ITM>
+					<ONSHOW script="Page1_RepeatBox1_OnShow(e);" />
+				</REPEATBOX>
+			</ITEMS>
+		</CONTAINER>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="Page1_Self_OnShow(e);" />
+		<ONKEYP script="Page1_Self_OnKeyPress(e);" />
+	</EVENTS>
+</PG>
