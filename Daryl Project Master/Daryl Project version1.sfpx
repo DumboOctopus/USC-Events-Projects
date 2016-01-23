@@ -1,0 +1,56 @@
+<SMARTFACEPROJECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SmartfaceProjectPlayerUpdated.xsd" XmlVersion="1059" LType="1" Name="Daryl Project version1" UID="1667327604" SID="-1" SName="No service selected" WS="http://www.smartface.io" PublishUrl="http://www.smartface.io" LastObjectID="FA66CCB9-A45C-4E28-85C2-CA57181528C6" ActiveProfileIndex="1" Version="1.0.0" BiDiMode="0">
+	<MainPageSettings Name="Page1" />
+	<Platform ScreenHeight="960" ScreenWidth="640" Dpi="326" iOSProfileName="iPhone 4(s)" androidProfileName="Nexus 5" AndroidVirtualDevice="" />
+	<SocialNetworks FacebookAppUID="" FacebookAppSecret="" TwitterConsumerKey="" TwitterConsumerSecret="" />
+	<MapApi AndroidMapKey="" IosGeocodingKey="" />
+	<AdMob PublisherId="" TestUsage="0" AdmobUsage="0" />
+	<DeviceOrientations Portrait="1" UpsideDown="0" LandscapeLeft="0" LandscapeRight="0" />
+	<AndroidProductKey AndroidProductKey="" />
+	<AndroidSenderID AndroidSenderID="" />
+	<ApplicationCacheSize ApplicationCacheSize="50" />
+	<ApplicationName ApplicationName="smartface demo" />
+	<Logging ServerUrl="" MaxLogSize="30">
+		<Events LogError="0" LogWarning="0" LogDebug="0" />
+	</Logging>
+	<ProjectDetails Owner="" MiddletInfoUrl="" Description="" EnableIntro="1" SplashScreenBackgroundColor="3947526" VersionTextColor="16777215" EnableSum="1" />
+	<AndroidKeyStore UseCustomKeyStore="0" AliasName="" StorePass="" KeyPass="" FingerPrintMD5="">
+		<File FileName="" Data="" />
+	</AndroidKeyStore>
+	<IOSKeyStore IOSUrlIdentifier="" IOSUrlSchemes="" />
+	<NavigationBarUpdate NavigationBarUpdate="1" />
+	<DebugParameters ConnectionTypeName="USB" ConnectionPort1="10001" ConnectionPort2="11001" OpenLogs="1" />
+	<Plugins>
+		<Plugin Name="Parse" />
+	</Plugins>
+	<RecentColors>
+		<Color Value="2212273" />
+		<Color Value="14934494" />
+		<Color Value="14858296" />
+		<Color Value="11899435" />
+		<Color Value="4045355" />
+		<Color Value="2963905" />
+		<Color Value="16052207" />
+		<Color Value="9670286" />
+		<Color Value="5227599" />
+		<Color Value="240387" />
+		<Color Value="6710886" />
+		<Color Value="208" />
+		<Color Value="16250871" />
+		<Color Value="15198183" />
+		<Color Value="209" />
+		<Color Value="14540253" />
+		<Color Value="5136117" />
+		<Color Value="13550362" />
+		<Color Value="6150898" />
+		<Color Value="3478023" />
+		<Color Value="5251953" />
+		<Color Value="2105123" />
+		<Color Value="3223603" />
+		<Color Value="8482922" />
+		<Color Value="7303023" />
+		<Color Value="7915" />
+		<Color Value="3974400" />
+		<Color Value="16751360" />
+		<Color Value="15725551" />
+	</RecentColors>
+</SMARTFACEPROJECT>

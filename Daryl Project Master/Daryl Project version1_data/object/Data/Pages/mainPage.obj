@@ -58,10 +58,10 @@
 			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
 			<ITEMS>
 				<REPEATBOX ID="FFF9AD3F-224C-495F-9DA8-51EC7A961824" Nm="RepeatBox1" Vsb="1" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="1" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="0" ShowHeader="0" ScrollHeader="0" StrokeWidth="3" StrokeColor="ffcc99" AutoSize="0" Loop="0" UseActiveItem="0">
-					<LCT X="-45" Y="41%" W="1000%" H="1000%" Z="0" Anc="3" />
+					<LCT X="0" Y="8%" W="1000%" H="1000%" Z="0" Anc="3" />
 					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 					<DATASOURCE>
-						<PRM Nm="Bind" Val="" />
+						<PRM Nm="Bind" Val="Data.dynamicDS" />
 					</DATASOURCE>
 					<GROUPINGDATASOURCE>
 						<PRM Nm="Bind" Val="" />

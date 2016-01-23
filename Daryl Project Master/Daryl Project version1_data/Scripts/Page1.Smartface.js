@@ -81,6 +81,7 @@ function Page1_SpotsButton_OnPressed(e) {
  * @this Page1.Events_Pane.RepeatBox1
  */
 function Page1_RepeatBox1_OnShow(e) {
+   
     /*DONT DELETE :)
     parseData.createMapPoint({
               "__type": "GeoPoint",
@@ -94,15 +95,22 @@ function Page1_RepeatBox1_OnShow(e) {
               "iso": "2011-08-21T18:02:52.249Z"
     });
     */
+    /*
     var tmp = "";
-    var resp =parseData.getAllMapPoints();
-    if(resp != undefined){
-        for(var i = 0; i < resp.length; i++)
-        {
-            alert(resp[i].address);
-        }
-    } else
+    var handleMapPoints = function (mapPoints)
     {
-        alert(resp);
+        for(var i = 0; i < mapPoints.length; i++)
+        {
+           alert(mapPoints[i].address);
+        }
     }
+    parseData.getAllMapPoints(handleMapPoints);
+    */
+    //for(var i = 0; i < resp.length; i++)
+    //{
+   //     alert(resp[i].address);
+   // }
+   
 }
+
+
