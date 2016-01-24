@@ -6,19 +6,6 @@
 			<LCT X="0%" Y="152%" W="1000%" H="850%" Z="0" Anc="3" />
 			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
-			<ITEMS>
-				<MAPVIEW ID="E577FFEA-10F3-4EFE-9E91-3089745C4EE1" Nm="MapView1" Vsb="1" MapType="0" CenterLatitude="41.035972" CenterLongitude="29.046902" ZoomLevel="2" EnableZoom="1" EnableScroll="1" ShowUserLocation="1" ShowPins="1" TouchEnabled="1">
-					<LCT X="0%" Y="0%" W="1000%" H="700%" Z="0" Anc="3" />
-					<DATA>
-						<PRM Nm="Bind1" Val="" />
-						<PRM Nm="Bind2" Val="" />
-						<PRM Nm="Bind3" Val="" />
-						<PRM Nm="Bind4" Val="" />
-						<PRM Nm="Bind5" Val="" />
-						<PRM Nm="Bind6" Val="" />
-					</DATA>
-				</MAPVIEW>
-			</ITEMS>
 		</CONTAINER>
 		<BTN ID="42607F86-1E92-4C53-973E-715615B863F3" Nm="EventsButton" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
 			<LCT X="0%" Y="67%" W="320%" H="83%" Z="0" Anc="3" />
@@ -57,7 +44,7 @@
 			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
 			<ITEMS>
-				<REPEATBOX ID="FFF9AD3F-224C-495F-9DA8-51EC7A961824" Nm="RepeatBox1" Vsb="1" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="1" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="0" ShowHeader="0" ScrollHeader="0" StrokeWidth="3" StrokeColor="ffcc99" AutoSize="0" Loop="0" UseActiveItem="0">
+				<REPEATBOX ID="FFF9AD3F-224C-495F-9DA8-51EC7A961824" Nm="RepeatBox1" Vsb="0" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="1" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="1" ShowHeader="1" ScrollHeader="1" StrokeWidth="3" StrokeColor="ffcc99" AutoSize="0" Loop="0" UseActiveItem="0">
 					<LCT X="0" Y="8%" W="1000%" H="1000%" Z="0" Anc="3" />
 					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
 					<DATASOURCE>

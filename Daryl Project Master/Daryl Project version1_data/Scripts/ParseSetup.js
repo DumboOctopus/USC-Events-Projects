@@ -13,7 +13,7 @@ parseData.requestHeaders = [
     "X-Parse-Application-Id: " + parseData.applicationId,
     "X-Parse-REST-API-Key: " + parseData.restApiKey
 ];
-parseData.createMapPoint = function(in_location, in_description, in_address, in_date){
+parseData.createMapPoint = function(in_location, in_description, in_address, in_date, in_name){
     var createMapPointReq = new SMF.Net.WebClient({
         url: parseData.urls.mapPointObjectPrefix,
         httpMethod: "POST",
@@ -22,7 +22,8 @@ parseData.createMapPoint = function(in_location, in_description, in_address, in_
             location: in_location,
             description: in_description,
             address: in_address,
-            date: in_date
+            date: in_date,
+            name: in_name
         }),
         onSyndicationSuccess : function (e) {
             alert("obj created");
