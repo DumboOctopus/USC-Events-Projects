@@ -1,4 +1,4 @@
-<SMARTFACEPROJECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SmartfaceProjectPlayerUpdated.xsd" XmlVersion="1059" LType="1" Name="Daryl Project version1" UID="1667327604" SID="-1" SName="No service selected" WS="http://www.smartface.io" PublishUrl="http://www.smartface.io" LastObjectID="FA66CCB9-A45C-4E28-85C2-CA57181528C6" ActiveProfileIndex="1" Version="1.0.0" BiDiMode="0">
+<SMARTFACEPROJECT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SmartfaceProjectPlayerUpdated.xsd" XmlVersion="1059" LType="1" Name="Daryl Project version1" UID="1667327604" SID="-1" SName="No service selected" WS="http://www.smartface.io" PublishUrl="http://www.smartface.io" LastObjectID="B8106DDB-E6CF-46C7-919F-E235CC3901E2" ActiveProfileIndex="1" Version="1.0.0" BiDiMode="0">
 	<MainPageSettings Name="Page1" />
 	<Platform ScreenHeight="960" ScreenWidth="640" Dpi="326" iOSProfileName="iPhone 4(s)" androidProfileName="Nexus 5" AndroidVirtualDevice="" />
 	<SocialNetworks FacebookAppUID="" FacebookAppSecret="" TwitterConsumerKey="" TwitterConsumerSecret="" />
@@ -31,26 +31,5 @@
 		<Color Value="2963905" />
 		<Color Value="16052207" />
 		<Color Value="9670286" />
-		<Color Value="5227599" />
-		<Color Value="240387" />
-		<Color Value="6710886" />
-		<Color Value="208" />
-		<Color Value="16250871" />
-		<Color Value="15198183" />
-		<Color Value="209" />
-		<Color Value="14540253" />
-		<Color Value="5136117" />
-		<Color Value="13550362" />
-		<Color Value="6150898" />
-		<Color Value="3478023" />
-		<Color Value="5251953" />
-		<Color Value="2105123" />
-		<Color Value="3223603" />
-		<Color Value="8482922" />
-		<Color Value="7303023" />
-		<Color Value="7915" />
-		<Color Value="3974400" />
-		<Color Value="16751360" />
-		<Color Value="15725551" />
 	</RecentColors>
 </SMARTFACEPROJECT>

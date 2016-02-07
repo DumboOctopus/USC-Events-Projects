@@ -1,27 +1,39 @@
 //
 
 
-var mode = "spots"; //modes: events, spots, explore
+var mode = "spots"; //modes: events, spots, explore, follow
 var setMode = function (newMode) {
     switch (newMode) {
-    case "events":
-        Pages.Page1.Spots_Pane.visible = false;
-        Pages.Page1.Explore_Pane.visible = false;
-        Pages.Page1.Events_Pane.visible = true;
-        this.mode = newMode;
-        break;
-    case "spots":
-        Pages.Page1.Spots_Pane.visible = true;
-        Pages.Page1.Explore_Pane.visible = false;
-        Pages.Page1.Events_Pane.visible = false;
-        this.mode = newMode;
-        break;
-    case "explore":
-        Pages.Page1.Spots_Pane.visible = false;
-        Pages.Page1.Explore_Pane.visible = true;
-        Pages.Page1.Events_Pane.visible = false;
-        this.mode = newMode;
-        break;
+        case "events":
+            Pages.Page1.Spots_Pane.visible = false;
+            Pages.Page1.Explore_Pane.visible = false;
+            Pages.Page1.Events_Pane.visible = true;
+            Pages.Page1.Follow_Pane.visible = false;
+            this.mode = newMode;
+            break;
+        case "spots":
+            Pages.Page1.Spots_Pane.visible = true;
+            Pages.Page1.Explore_Pane.visible = false;
+            Pages.Page1.Events_Pane.visible = false;
+            Pages.Page1.Follow_Pane.visible = false;
+            this.mode = newMode;
+            break;
+        case "explore":
+            Pages.Page1.Spots_Pane.visible = false;
+            Pages.Page1.Explore_Pane.visible = true;
+            Pages.Page1.Events_Pane.visible = false;
+            Pages.Page1.Follow_Pane.visible = false;
+            this.mode = newMode;
+            break;
+        case "follow":
+            Pages.Page1.Spots_Pane.visible = false;
+            Pages.Page1.Explore_Pane.visible = false;
+            Pages.Page1.Events_Pane.visible = false;
+            Pages.Page1.Follow_Pane.visible = true;
+            this.mode = newMode;
+            break;
+        default:
+            throw new Exeption();
     }
 }
 
@@ -41,11 +53,16 @@ function Page1_Self_OnKeyPress(e) {
  * @param {EventArguments} e Returns some attributes about the specified functions
  * @this Pages.Page1
  */
+ var tmpLoaded = false
 function Page1_Self_OnShow() {
     //Comment following block for removing navigationbar/actionbar sample
     //Copy this code block to every page onShow
     this.statusBar.transparent = true;
-    
+    if(!tmpLoaded){
+        load("TableSetUp.js");
+        tmpLoaded = true
+    }
+    setMode("events");
     /**/
 }
 
@@ -74,6 +91,15 @@ function Page1_ExploreButton_OnPressed(e) {
  */
 function Page1_SpotsButton_OnPressed(e) {
     setMode("spots");
+}
+
+/**
+* Creates action(s) that are run when the object is pressed from device's screen.
+* @param {EventArguments} e Returns some attributes about the specified functions
+* @this Page1.FollowButon
+*/
+function Page1_FollowButon_OnPressed(e){
+    setMode("follow");
 }
 
 /**
@@ -112,5 +138,6 @@ function Page1_RepeatBox1_OnShow(e) {
    // }
    
 }
+
 
 

@@ -1,0 +1,15 @@
+<OBJECT>
+	<Table name="events" id="B8106DDB-E6CF-46C7-919F-E235CC3901E2" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" visible="true" touchEnabled="true" Z="0">
+		<TypeSpecific LastFieldID="0" Guid="" OverrideOnUpdate="1" ReadOnly="0" isServerObject="0" OneToOneType="2687039" ActualFileSize="0" RunOnMemory="0">
+			<Columns>
+				<Column ID="1" Name="eName" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="2" Name="address" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="3" Name="dscrptn" Type="0" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="4" Name="isOnCampus" Type="1" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="5" Name="clicks" Type="1" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="6" Name="longitude" Type="2" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+				<Column ID="7" Name="latitude" Type="2" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
+			</Columns>
+		</TypeSpecific>
+	</Table>
+</OBJECT>
