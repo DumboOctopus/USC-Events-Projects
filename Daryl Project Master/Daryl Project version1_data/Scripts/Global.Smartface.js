@@ -29,8 +29,7 @@ function Global_Events_OnStart(e) {
        }
    });
    */
-
-
+    
     //      Uncomment following block for menu sample. Read the JS code file for usage.
     /*
     load("Menu.js");

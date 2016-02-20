@@ -1,15 +1,15 @@
 
 //Data.execute("DROP TABLE IF EXISTS events;");
 //Data.execute("Create table events (eName string, address string, date string, dscrptn string, isOnCampus integer, clicks integer, longitude float, latitude float)");
-Data.execute("insert into events values('My first row', 'sd', '1/1/1', 'magical event', 1, 0, 40.0, 60.0) ;");
-Data.execute("insert into events values('Smartface.Inc', 'sd', 1/1/1, 'magical event', 1, 0, 5.0, 54.0);");
-Data.execute("insert into events values('Smartface App Studio', 'sd', '1/1/1', 'magical event', 1, 0, 56.0, 5.6);");
-Data.execute("insert into events values(?, ?, ?, ?, ?, ?, ? ,?);", 'SmarStudio', "asd", "2/2/2", 'magical event', 1, 0, 6.6, 6.6);
+//Data.execute("insert into events values('My first row', 'sd', '1/1/1', 'magical event', 1, 0, 40.0, 60.0) ;");
+//Data.execute("insert into events values('Smartface.Inc', 'sd', 1/1/1, 'magical event', 1, 0, 5.0, 54.0);");
+//Data.execute("insert into events values('Smartface App Studio', 'sd', '1/1/1', 'magical event', 1, 0, 56.0, 5.6);");
+//Data.execute("insert into events values(?, ?, ?, ?, ?, ?, ? ,?);", 'SmarStudio', "asd", "2/2/2", 'magical event', 1, 0, 6.6, 6.6);
 //var tmp;
 Data.dynamicDS = new Data.Dataset({
     selectQuery : "select * from events"
 });
-Data.dynamicDS.refresh();
+
 parseData.getAllMapPoints(function(mapPoints){
     for(var i = 0; i < mapPoints.length; i++)
     {

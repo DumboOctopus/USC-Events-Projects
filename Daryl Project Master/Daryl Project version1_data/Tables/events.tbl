@@ -10,6 +10,17 @@
 				<Column ID="6" Name="longitude" Type="2" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
 				<Column ID="7" Name="latitude" Type="2" DefaultValue="" AutoIncrement="0" PrimaryKey="0" PrimaryAssistant="0" ForeignKey="00000000-0000-0000-0000-000000000000" IsSecure="0" />
 			</Columns>
+			<Rows>
+				<Row ID="1" Caption="">
+					<Cell Value="Test" />
+					<Cell Value="terst" />
+					<Cell Value="test" />
+					<Cell Value="1" />
+					<Cell Value="1" />
+					<Cell Value="10" />
+					<Cell Value="10" />
+				</Row>
+			</Rows>
 		</TypeSpecific>
 	</Table>
 </OBJECT>

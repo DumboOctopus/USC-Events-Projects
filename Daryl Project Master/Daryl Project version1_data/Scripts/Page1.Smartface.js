@@ -58,10 +58,7 @@ function Page1_Self_OnShow() {
     //Comment following block for removing navigationbar/actionbar sample
     //Copy this code block to every page onShow
     this.statusBar.transparent = true;
-    if(!tmpLoaded){
-        load("TableSetUp.js");
-        tmpLoaded = true
-    }
+    
     setMode("events");
     /**/
 }
@@ -73,6 +70,10 @@ function Page1_Self_OnShow() {
  */
 function Page1_EventsButton_OnPressed(e) {
     setMode("events");
+    if(!tmpLoaded){
+        load("TableSetUp.js");
+        tmpLoaded = true
+    }
 }
 
 /**

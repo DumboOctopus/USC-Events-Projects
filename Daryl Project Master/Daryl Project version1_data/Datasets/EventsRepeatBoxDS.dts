@@ -1,0 +1,20 @@
+<OBJECT>
+	<Dataset name="EventsRepeatBoxDS" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="0px" height="0px" left="0px" top="0px" visible="true" touchEnabled="true" Z="0">
+		<TypeSpecific Table="00000000-0000-0000-0000-100000000001" AutoCommit="0" FastCommit="0" PreserveState="0" SelectAll="1" isServerObject="0">
+			<Fields>
+				<Field ID="1" Name="events.eName" TblID="B8106DDB-E6CF-46C7-919F-E235CC3901E2" />
+				<Field ID="2" Name="events.address" TblID="B8106DDB-E6CF-46C7-919F-E235CC3901E2" />
+				<Field ID="3" Name="events.dscrptn" TblID="B8106DDB-E6CF-46C7-919F-E235CC3901E2" />
+				<Field ID="4" Name="events.isOnCampus" TblID="B8106DDB-E6CF-46C7-919F-E235CC3901E2" />
+				<Field ID="5" Name="events.clicks" TblID="B8106DDB-E6CF-46C7-919F-E235CC3901E2" />
+				<Field ID="6" Name="events.longitude" TblID="B8106DDB-E6CF-46C7-919F-E235CC3901E2" />
+				<Field ID="7" Name="events.latitude" TblID="B8106DDB-E6CF-46C7-919F-E235CC3901E2" />
+			</Fields>
+			<SqlText>
+			<![CDATA[
+SELECT * FROM "events" WHERE "isCampus" = 1
+			]]>
+			</SqlText>
+		</TypeSpecific>
+	</Dataset>
+</OBJECT>
