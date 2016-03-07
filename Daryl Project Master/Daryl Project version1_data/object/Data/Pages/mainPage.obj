@@ -1,84 +1,59 @@
-<PG ID="C7388CCE-7E7A-4DB2-A6AC-AB4201920AF7" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="Page1" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="1" StatusBarTransparent="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="1" ShwActionBar="1" ShiftObjectsDown="0" TouchEnabled="1">
+<PG ID="40A05A3F-7BDF-420E-9D48-D7091921A9C0" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgLogin" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="0" StatusBarTransparent="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="0" ShwActionBar="0" ShiftObjectsDown="1" TouchEnabled="1">
 	<EDGE X="0" Y="0" W="640" H="960" />
 	<POS Pos="3" SMode="32" />
 	<BODY>
-		<BTN ID="42607F86-1E92-4C53-973E-715615B863F3" Nm="EventsButton" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
-			<LCT X="0%" Y="40%" W="250%" H="83%" Z="0" Anc="3" />
-			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
-			<STYLE BgClr="ffcc99" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+		<EDIT ID="4E0B5F23-86AD-4F6E-8AA7-0E6BF6B9B356" Nm="ebUsername" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="0" EnableUpperCase="0">
+			<LCT X="200%" Y="275%" W="600%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Username&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="1" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
 			<DATA>
-				<PRM Nm="Bind" Val="&quot;Events&quot;" />
+				<PRM Nm="Bind" Val="" />
 			</DATA>
-			<ONPRESSED script="Page1_EventsButton_OnPressed(e);" />
-		</BTN>
-		<BTN ID="CA150122-75C7-4711-A576-8CB6AE13EFEB" Nm="SpotsButton" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
-			<LCT X="250%" Y="40%" W="250%" H="83%" Z="0" Anc="3" />
-			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
-			<STYLE BgClr="beffbe" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<ONRETURNKEY script="pgLogin_ebUsername_OnReturnKey(e);" />
+		</EDIT>
+		<EDIT ID="E6F9BA29-ACFD-4E47-BD2E-CDFBE2605214" Nm="ebPassword" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="0" EnableUpperCase="0">
+			<LCT X="200%" Y="400%" W="600%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Password&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="1" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
 			<DATA>
-				<PRM Nm="Bind" Val="&quot;Spots&quot;" />
+				<PRM Nm="Bind" Val="" />
 			</DATA>
-			<ONPRESSED script="Page1_SpotsButton_OnPressed(e);" />
-		</BTN>
-		<BTN ID="40425061-4689-4D01-A53F-DEAB83420283" Nm="ExploreButton" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
-			<LCT X="500%" Y="40%" W="250%" H="83%" Z="0" Anc="3" />
+			<ONRETURNKEY script="pgLogin_ebPassword_OnReturnKey(e);" />
+		</EDIT>
+		<BTN ID="F408F018-49ED-4F3A-89D5-CB1C72668B5B" Nm="btnLogin" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+			<LCT X="200%" Y="600%" W="600%" H="100%" Z="0" Anc="3" />
 			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
-			<STYLE BgClr="99ccff" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<STYLE BgClr="b5ba27" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
 			<DATA>
-				<PRM Nm="Bind" Val="&quot;Explore&quot;" />
+				<PRM Nm="Bind" Val="&quot;Login&quot;" />
 			</DATA>
-			<ONPRESSED script="Page1_ExploreButton_OnPressed(e);" />
+			<ONPRESSED script="pgLogin_btnLogin_OnPressed(e);" />
 		</BTN>
-		<BTN ID="F409BE7D-7087-49EB-8566-44737EDF473C" Nm="FollowButon" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
-			<LCT X="750%" Y="40%" W="250%" H="83%" Z="0" Anc="3" />
+		<BTN ID="92C88161-D7D1-4ADF-828D-06181B225D75" Nm="btnCreateAccount" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+			<LCT X="200%" Y="800%" W="600%" H="100%" Z="0" Anc="3" />
 			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
-			<STYLE BgClr="996666" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<STYLE BgClr="b5ba27" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
 			<DATA>
-				<PRM Nm="Bind" Val="&quot;Follow&quot;" />
+				<PRM Nm="Bind" Val="&quot;Create Account&quot;" />
 			</DATA>
-			<ONPRESSED script="Page1_FollowButon_OnPressed(e);" />
+			<ONPRESSED script="pgLogin_btnCreateAccount_OnPressed(e);" />
 		</BTN>
-		<CONTAINER ID="053B1629-009C-40B0-BA9D-00D33F3FE3C1" Nm="Explore_Pane" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="140%" W="1000%" H="860%" Z="0" Anc="3" />
-			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
-			<ITEMS>
-				<REPEATBOX ID="7A6C7D30-475F-4AE9-9EB8-600DC4AD5CC7" Nm="RepeatBox1" Vsb="1" Enb="0" TouchEnabled="1" EnableScroll="1" ShwScrl="1" ItmDel="0" ItmReord="0" ItmGrpng="0" GrpngStyle="0" PDownRefresh="0" PUpRefresh="0" ShowHeader="0" ScrollHeader="0" StrokeWidth="1" StrokeColor="999999" AutoSize="0" Loop="0" UseActiveItem="0">
-					<LCT X="0%" Y="0%" W="1000%" H="1000%" Z="0" Anc="3" />
-					<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-					<DATASOURCE>
-						<PRM Nm="Bind" Val="" />
-					</DATASOURCE>
-					<GROUPINGDATASOURCE>
-						<PRM Nm="Bind" Val="" />
-					</GROUPINGDATASOURCE>
-					<ITM InActItemH="250%" ActItemH="4000d" HeaderItemH="4000d" GroupingHeaderItemH="4000d" PullDownItemH="4000d" PullUpItemH="4000d">
-						<STYLE BgTparent="0" InActBgClr="eff3ef" InActBgPicName="" InActPicPosition="3" InActPicSizeMode="2" ActBgClr="eff3ef" ActBgPicName="" ActPicPosition="3" ActPicSizeMode="2" HeaderBgClr="eff3ef" HeaderBgPicName="" HeaderPicPosition="3" HeaderPicSizeMode="2" GroupingHeaderBgClr="e0dcd6" GroupingHeaderBgPicName="" GroupingHeaderPicPosition="3" GroupingHeaderPicSizeMode="2" PullDownBgClr="5a6265" PullDownBgPicName="" PullDownPicPosition="3" PullDownPicSizeMode="2" PullUpBgClr="5a6265" PullUpBgPicName="" PullUpPicPosition="3" PullUpPicSizeMode="2" />
-						<BODY>
-						</BODY>
-					</ITM>
-					<ONSHOW script="Page1_RepeatBox1_OnShow(e);" />
-				</REPEATBOX>
-			</ITEMS>
-		</CONTAINER>
-		<CONTAINER ID="F291942A-C14B-4918-95FD-809A19F5D006" Nm="Spots_Pane" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="140%" W="1000%" H="860%" Z="0" Anc="3" />
-			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
-		</CONTAINER>
-		<CONTAINER ID="36F6CBA3-05BA-4381-ACF0-360DDBFACF7D" Nm="Events_Pane" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="140%" W="1000%" H="860%" Z="0" Anc="3" />
-			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
-		</CONTAINER>
-		<CONTAINER ID="6D046604-1BC4-42CA-8D07-E452D6FE2E90" Nm="Follow_Pane" Vsb="1" TouchEnabled="1" AutoSize="0">
-			<LCT X="0%" Y="140%" W="1000%" H="860%" Z="0" Anc="3" />
-			<Layout LayoutType="0" LayoutOrientation="0" LayoutAlignment="0" LayoutHorizontalGap="-1" LayoutVerticalGap="-1" />
-			<STYLE BrClr="313031" BrW="1" BgTparent="1" BgClr="eff3ef" />
-		</CONTAINER>
+		<LBL ID="4E131CDE-66FD-4C1B-8EC2-D9DC2C559629" Nm="Label1" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="100%" Y="121%" W="750%" H="73%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="666666" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="15" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Name of app goes here&quot;" />
+			</DATA>
+		</LBL>
 	</BODY>
 	<EVENTS>
-		<ONSHOW script="Page1_Self_OnShow(e);" />
-		<ONKEYP script="Page1_Self_OnKeyPress(e);" />
+		<ONSHOW script="pgLogin_Self_OnShow(e);" />
 	</EVENTS>
 </PG>

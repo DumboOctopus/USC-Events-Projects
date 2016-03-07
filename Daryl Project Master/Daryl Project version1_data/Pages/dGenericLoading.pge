@@ -1,0 +1,9 @@
+<SMF>
+	<UI>
+		<Dialog id="9F2B4C20-E22D-4D39-87CC-C3708F2F5BC3" name="dGenericLoading" width="80.0000011920929%" height="80.0000011920929%" left="10.0000001490116%" top="10.0000001490116%" anchor.left="false" anchor.top="false" anchor.right="false" anchor.bottom="false" backgroundImage="" fillColor="#f0f0f0" imageFillType="SMF.UI.ImageFillType.tile" imagePosition="SMF.UI.Alignment.topLeft" limitObjectsInPageBoundaries="false" lockOrientation="false" statusBar.visible="false" shiftObjectsDown="true" statusBarTransparent="true" statusBar.style="SMF.UI.StatusBarStyle.default" showNavigationBar="false" showActionBar="false" touchEnabled="true" parentDrawPage="" bgTransparent="false">
+			<controls>
+				<ActivityIndicator name="ActivityIndicator1" id="2DB400AF-E538-427B-BAB9-187867C90E3A" parent="00000000-0000-0000-0000-100000000001" parentMode="-1" width="40px" height="40px" left="41.7924463748932%" top="44.5282846689224%" visible="true" touchEnabled="false" Z="0" designVisible="true" anchor.left="true" anchor.top="true" anchor.right="false" anchor.bottom="false" enabled="true" style="SMF.UI.ActivityIndicatorStyle.gray" />
+			</controls>
+		</Dialog>
+	</UI>
+</SMF>

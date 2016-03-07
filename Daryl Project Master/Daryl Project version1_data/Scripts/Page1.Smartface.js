@@ -1,35 +1,33 @@
 //
 
 
-var mode = "spots"; //modes: events, spots, explore, follow
+var mode = "events"; //modes: events, spots, explore, follow
 var setMode = function (newMode) {
     switch (newMode) {
         case "events":
             Pages.Page1.Spots_Pane.visible = false;
             Pages.Page1.Explore_Pane.visible = false;
             Pages.Page1.Events_Pane.visible = true;
-            Pages.Page1.Follow_Pane.visible = false;
             this.mode = newMode;
             break;
         case "spots":
             Pages.Page1.Spots_Pane.visible = true;
             Pages.Page1.Explore_Pane.visible = false;
             Pages.Page1.Events_Pane.visible = false;
-            Pages.Page1.Follow_Pane.visible = false;
             this.mode = newMode;
             break;
         case "explore":
             Pages.Page1.Spots_Pane.visible = false;
             Pages.Page1.Explore_Pane.visible = true;
             Pages.Page1.Events_Pane.visible = false;
-            Pages.Page1.Follow_Pane.visible = false;
             this.mode = newMode;
             break;
-        case "follow":
+        case "more":
+            Dialogs.MoreDialog.show(SMF.UI.MotionEase.plain, SMF.UI.TransitionEffectType.push, false, false, false);
+            
             Pages.Page1.Spots_Pane.visible = false;
             Pages.Page1.Explore_Pane.visible = false;
             Pages.Page1.Events_Pane.visible = false;
-            Pages.Page1.Follow_Pane.visible = true;
             this.mode = newMode;
             break;
         default:
@@ -72,7 +70,7 @@ function Page1_EventsButton_OnPressed(e) {
     setMode("events");
     if(!tmpLoaded){
         load("TableSetUp.js");
-        tmpLoaded = true
+        tmpLoaded = true;
     }
 }
 
@@ -99,8 +97,8 @@ function Page1_SpotsButton_OnPressed(e) {
 * @param {EventArguments} e Returns some attributes about the specified functions
 * @this Page1.FollowButon
 */
-function Page1_FollowButon_OnPressed(e){
-    setMode("follow");
+function Page1_More_OnPressed(e){
+   setMode("more");
 }
 
 /**

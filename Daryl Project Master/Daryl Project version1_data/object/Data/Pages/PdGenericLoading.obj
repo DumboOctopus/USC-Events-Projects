@@ -1,0 +1,9 @@
+<PG ID="9F2B4C20-E22D-4D39-87CC-C3708F2F5BC3" Type="1" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="dGenericLoading" BgClr="f0f0f0" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="0" StatusBarTransparent="1" EnableTabBar="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="0" ShwActionBar="0" ShiftObjectsDown="1" TouchEnabled="1">
+	<EDGE X="100%" Y="100%" W="800%" H="800%" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<ACTIVITYINDICATOR ID="2DB400AF-E538-427B-BAB9-187867C90E3A" Nm="ActivityIndicator1" Vsb="1" Style="1" TouchEnabled="0">
+			<LCT X="418%" Y="445%" W="40" H="40" Z="0" Anc="3" />
+		</ACTIVITYINDICATOR>
+	</BODY>
+</PG>

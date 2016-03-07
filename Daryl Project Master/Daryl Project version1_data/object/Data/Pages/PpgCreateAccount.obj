@@ -1,0 +1,65 @@
+<PG ID="D8E6DF08-A0D9-4C37-A2C7-35F541B929D2" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgCreateAccount" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="0" StatusBarTransparent="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="0" ShwActionBar="0" ShiftObjectsDown="1" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="640" H="960" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<EDIT ID="F267B7A5-9701-4AB2-83B1-B0AB3F423A33" Nm="ebUsername" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+			<LCT X="200%" Y="275%" W="600%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Username&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+			<ONRETURNKEY script="pgCreateAccount_ebUsername_OnReturnKey(e);" />
+		</EDIT>
+		<EDIT ID="07AA7FE0-0624-433B-871B-CD95012FD340" Nm="ebEmail" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+			<LCT X="200%" Y="370%" W="600%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Email&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+		</EDIT>
+		<EDIT ID="0F3BEE3D-3BAD-4AC8-AD2D-34A0F2F6EE40" Nm="ebPassword" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+			<LCT X="200%" Y="500%" W="600%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Password&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+			<ONRETURNKEY script="pgCreateAccount_ebPassword_OnReturnKey(e);" />
+		</EDIT>
+		<EDIT ID="BF07AAC2-5A89-4D1C-A27C-AC46742F3E5E" Nm="ebPasswordVerify" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+			<LCT X="200%" Y="600%" W="600%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Verify Password&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+			<ONRETURNKEY script="pgCreateAccount_ebPasswordVerify_OnReturnKey(e);" />
+		</EDIT>
+		<BTN ID="4A016F60-B96C-4E6F-BB9D-25EA1E2733A0" Nm="btnCreate" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+			<LCT X="200%" Y="800%" W="600%" H="100%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
+			<STYLE BgClr="b5ba27" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Create&quot;" />
+			</DATA>
+			<ONPRESSED script="pgCreateAccount_btnCreate_OnPressed(e);" />
+		</BTN>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgCreateAccount_Self_OnShow(e);" />
+	</EVENTS>
+</PG>

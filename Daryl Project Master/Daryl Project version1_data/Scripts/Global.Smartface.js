@@ -11,6 +11,8 @@ function Global_Events_OnStart(e) {
 //      Also there is a part of code block in Page1, which should be copied to every page for HeaderBar usage
     load("ParseSetup.js");
     
+
+    
 //    load("HeaderBar.js");
 //    header = new HeaderBar();
 
@@ -50,4 +52,12 @@ function Global_Events_OnError(e) {
         });
         break;
     }
+}
+/**
+* Triggered before exiting applicaiton.
+* @param {EventArguments} e Returns some attributes about the specified functions
+* @this SMF.Net.Events
+*/
+function Global_Events_OnExit(e){
+    parseData.logout(function(){});
 }

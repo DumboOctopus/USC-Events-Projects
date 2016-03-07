@@ -1,0 +1,97 @@
+<PG ID="D2224682-6EFE-4EDE-BA33-F2FB335F15B9" Type="0" UsesTemplatePage="0" TemplatePageID="00000000-0000-0000-0000-100000000001" Nm="pgCreateEvent" BgClr="ffffff" BgTparent="0" BgPicName="" DefFoc="00000000-0000-0000-0000-100000000001" SldEffect="0" SldEase="0" Blr="0" ShwStatusBar="0" StatusBarTransparent="1" EnableTabBar="0" LockOrientation="0" PageOrientation="0" IsTemplatePage="0" IsSplashScreen="0" ShwNavigationBar="0" ShwActionBar="0" ShiftObjectsDown="1" TouchEnabled="1">
+	<EDGE X="0" Y="0" W="640" H="960" />
+	<POS Pos="3" SMode="32" />
+	<BODY>
+		<EDIT ID="F81E43C0-325C-4A46-A442-4DC87AE98BF6" Nm="eNameField" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+			<LCT X="125%" Y="100%" W="750%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Name&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+		</EDIT>
+		<EDIT ID="701EBF24-A313-4B5E-B555-3A75BA523E55" Nm="eDescription" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+			<LCT X="125%" Y="250%" W="750%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Descrpition&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+		</EDIT>
+		<EDIT ID="42A34C80-FAB5-4C2D-9804-B7D4D1B605F7" Nm="eLocation" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+			<LCT X="125%" Y="400%" W="750%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Location&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+		</EDIT>
+		<EDIT ID="E18998E1-B087-4D3E-8215-EB3E503A8609" Nm="ePrice" Type="2" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" MtLn="0" PxlEdg="5" EnableClearButton="1" EnableUpperCase="0">
+			<LCT X="125%" Y="700%" W="750%" H="100%" Z="0" Anc="3" />
+			<PlaceHolder>
+				<PRM Nm="Bind" Val="&quot;Price&quot;" />
+			</PlaceHolder>
+			<FONT FName="Default" FSize="8p" AdjustFSize="0" MinFSize="7" FColor="7a7a7a" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="0" BgClr="ffffff" BrClr="999999" BrW="0" ActBrClr="cc6633" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="" />
+			</DATA>
+		</EDIT>
+		<LBL ID="C87687FA-77D5-4A5A-A040-18190E757837" Nm="piDatePicker" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="125%" Y="550%" W="750%" H="73%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="666666" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Date&quot;" />
+			</DATA>
+			<ONTOUCH script="pgCreateEvent_piDatePicker_OnTouch(e);" />
+		</LBL>
+		<BTN ID="ED00ADFF-0BDB-4208-9F96-EAC5AC46FFA7" Nm="btnCreateEvent" Vsb="1" Alpha="100" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+			<LCT X="550%" Y="850%" W="350%" H="100%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
+			<STYLE BgClr="b5ba27" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Create&quot;" />
+			</DATA>
+			<ONPRESSED script="pgCreateEvent_btnCreateEvent_OnPressed(e);" />
+		</BTN>
+		<BTN ID="8D889DC9-7669-4287-936B-05582226D22D" Nm="btnCancel" Vsb="1" Alpha="65" Enb="1" TouchEnabled="1" Type="2" PxlEdg="3" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0">
+			<LCT X="125%" Y="850%" W="350%" H="100%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FColor="000000" PressedFColor="ffffff" FStyle="0" Undrln="0" />
+			<STYLE BgClr="2d39ff" PressedBgClr="000000" HTAlgn="1" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Cancel&quot;" />
+			</DATA>
+			<ONPRESSED script="pgCreateEvent_btnCancel_OnPressed(e);" />
+		</BTN>
+		<LBL ID="D95289D2-E9F5-4782-8160-24909C9A7D81" Nm="piTime" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="625%" Y="550%" W="306%" H="80%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="666666" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="1" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;Time&quot;" />
+			</DATA>
+			<ONTOUCH script="pgCreateEvent_piTime_OnTouch(e);" />
+		</LBL>
+		<LBL ID="6983672C-1442-4C38-B0AE-DA5EC345ADF0" Nm="lblCurrency" Type="2" Mask="" Vsb="1" Alpha="100" TouchEnabled="1" MtLn="0" PxlEdg="3" ShwScrl="0" AutoLnk="0" ShwShdw="0" ShdwXOffset="0" ShdwYOffset="0" ShdwClr="0" AutoSize="0">
+			<LCT X="50%" Y="700%" W="750%" H="100%" Z="0" Anc="3" />
+			<FONT FName="Default" FSize="8p" FUnit="pt" AdjustFSize="0" MinFSize="7" FColor="666666" FStyle="0" Undrln="0" />
+			<STYLE BgTparent="1" BgClr="cccccc" BrClr="999999" BrW="0" HTAlgn="0" VTAlgn="1" TxtDir="0" HorizontalGapValue="15" />
+			<DATA>
+				<PRM Nm="Bind" Val="&quot;$&quot;" />
+			</DATA>
+		</LBL>
+	</BODY>
+	<EVENTS>
+		<ONSHOW script="pgCreateEvent_Self_OnShow(e);" />
+	</EVENTS>
+</PG>

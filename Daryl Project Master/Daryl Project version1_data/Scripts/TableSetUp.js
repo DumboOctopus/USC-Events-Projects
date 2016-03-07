@@ -1,6 +1,6 @@
 
-//Data.execute("DROP TABLE IF EXISTS events;");
-//Data.execute("Create table events (eName string, address string, date string, dscrptn string, isOnCampus integer, clicks integer, longitude float, latitude float)");
+Data.execute("DROP TABLE IF EXISTS events;");
+Data.execute("Create table events (eName string, address string, date string, dscrptn string, isOnCampus integer, clicks integer, longitude float, latitude float)");
 //Data.execute("insert into events values('My first row', 'sd', '1/1/1', 'magical event', 1, 0, 40.0, 60.0) ;");
 //Data.execute("insert into events values('Smartface.Inc', 'sd', 1/1/1, 'magical event', 1, 0, 5.0, 54.0);");
 //Data.execute("insert into events values('Smartface App Studio', 'sd', '1/1/1', 'magical event', 1, 0, 56.0, 5.6);");
@@ -13,7 +13,10 @@ Data.dynamicDS = new Data.Dataset({
 parseData.getAllMapPoints(function(mapPoints){
     for(var i = 0; i < mapPoints.length; i++)
     {
-   
+        for(var obj in mapPoints[i].createdBy)
+        {
+            alert(obj);
+        }
         dateTmp = mapPoints[i].date.iso;
         dayTmp = dateTmp.substring(0, 9).split("-");
         timeTmp = dateTmp.substring(11, 19).split(":");
